@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> array mathods</title>
+<script type="text/javascript">
+var states = new Array("karnataka","mp");
+document.write("<h1> program to demonstrate array methods<h1>");
+document.write("<hr/>");
+var n1=window.prompt("enter the of the state");
+states.push(n1);
+document.writeln("<br/><br/><b>array after adding<b><br/>"+states);
+ns=window.prompt("enter the state to insert ib the begining");
+states.unshift(ns);
+document.writeln("<br/><br/><b>array after insert at the begining<b><br/>"+states);
+states.sort();
+document.writeln("<br/><br/><b>array after sorting<b><br/>"+states);
+states.reverse();
+document.writeln("<br/><br/><b>array after reverse<b><br/>"+states);
+var newarr=states.slice(2,4);
+document.writeln("</br><br/><b> slice array(from 2 to 6)<b><br/>"+newarr);
+var concatstr=states.join("*");
+document.writeln("<br/><br/><b> new concatenated array string<b><br/>"+concatstr);
+var newarr=states.concat("kashmir","maharastra");
+document.writeln("<br/><br/><b> new concatenated array<b><br/>"+newarr);
+states.pop();
+states.shift();
+document.writeln("<br/><br/><b>array after removing first and last element<b><br/>"+states);
+</script>
+</head>
+</html>
